@@ -1,0 +1,222 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background: url(R.jpg);
+  background-size: cover;
+  background-repeat:no-repeat;
+  overflow-x: hidden;
+
+}
+.container-fluid{
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+
+}
+
+.bar{
+  
+  background: rgb(63,74,251);
+  background: radial-gradient(circle, rgba(63,74,251,0.5122841372877276) 0%, rgba(252,246,70,1) 100%);
+  background: none;
+}
+
+
+.btn{
+
+    padding: .1rem 1.5rem;
+    border: .2rem solid #443;
+    border-radius: 95% 4% 97% 5% / 4% 94% 3% 95%;
+    color: #443;
+    background: none;
+    cursor: pointer;
+    margin-top: 1rem;
+    font-size: 1.7rem;
+    transition: all .2s linear;
+  }
+  
+  .btn:hover {
+    border-radius: 4% 95% 6% 95% / 95% 4% 92% 5%;
+    border: .2rem dashed #443;
+  }
+  
+
+
+.img-logo {
+  
+  width: 16%;
+  background: url(logo@2x\ \(1\).png);
+  background-size: cover;
+  border-style: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+.img-logo:hover {
+  transform: scale(1.1);
+}
+.title {
+  padding: 10px 20px;
+  transition: all 0.3s ease;
+  text-shadow: 20px 10px rgba(98, 0, 255, 0.89); 
+}
+
+.title:hover {
+  transform: scale(1.5);
+  
+}
+
+.t-img {
+
+  background: radial-gradient(circle, rgba(63,74,251,0.5122841372877276) 0%, rgba(252,246,70,1) 100%);
+
+}
+
+.t-img2 {
+
+  background: radial-gradient(circle, rgba(63,74,251,0.5122841372877276) 0%, rgba(252,246,70,1) 100%);
+
+}
+
+embed {
+  display: none;
+  
+}
+
+
+.foot {
+
+  background: radial-gradient(circle, rgba(63,74,251,0.5122841372877276) 0%, rgba(252,246,70,1) 100%);
+}
+
+
+
+
+.wrapper {
+  display: inline-flex;
+  list-style: none;
+  height: 120px;
+  width: 100%;
+  padding-top: 40px;
+  font-family: "Poppins", sans-serif;
+  justify-content: center;
+}
+
+.wrapper .icon {
+  position: relative;
+  background: #fff;
+  border-radius: 50%;
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  background: url(95586_facebook_512x512.png);
+  background-size: cover;
+}
+
+.wrapper .icon2 {
+  position: relative;
+  background: #fff;
+  border-radius: 50%;
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  background: url(R.png);
+  background-size: cover;
+}
+
+.wrapper .icon3 {
+  position: relative;
+  background: #fff;
+  border-radius: 50%;
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  background: url(instagram.jpg);
+  background-size: cover;
+}
+.wrapper .tooltip {
+  position: absolute;
+  top: 0;
+  font-size: 14px;
+  background: #fff;
+  color: #fff;
+  padding: 5px 8px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip::before {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  background: #fff;
+  bottom: -3px;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .icon:hover .tooltip {
+  top: -45px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper .facebook:hover,
+.wrapper .facebook:hover .tooltip,
+.wrapper .facebook:hover .tooltip::before {
+  background: #1877F2;
+  color: #fff;
+}
+
+.wrapper .twitter:hover,
+.wrapper .twitter:hover .tooltip,
+.wrapper .twitter:hover .tooltip::before {
+  background: #1DA1F2;
+  color: #fff;
+}
+
+.wrapper .instagram:hover,
+.wrapper .instagram:hover .tooltip,
+.wrapper .instagram:hover .tooltip::before {
+  background: #E4405F;
+  color: #fff;
+}
+
